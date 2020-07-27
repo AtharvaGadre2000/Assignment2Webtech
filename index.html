@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="next.css">
+</head>
+<body>
+    <div class="container1">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#result">Output</a></li>
+            </ul>
+        </nav>
+        <section id="home"><br><br><br>
+            <h1>Welcome to Mathematica</h1>
+            <p>To register for the international Mathematics Olympiad Click on Register <br>
+            And to see your registration click on Output</p>
+        </section>
+
+        <section id="register">
+            <h1>Register</h1>
+                <form id="myform">
+                    <div class="wrapper">
+                        <div class="title">
+                            Registration Form
+                        </div>
+                        <div class="form">
+                            <div class="inputfield">
+                                <label> First Name :</label>
+                                <input type="text" class="input" id="fname">
+                            </div>
+                            <div class="inputfield">
+                                <label> Last Name :</label>
+                                <input type="text" class="input" id="lname">
+                            </div>
+                            <div class="inputfield">
+                                <label> Email ID :</label>
+                                <input type="email" class="input" id="email">
+                            </div>
+                            <div class="inputfield">
+                                <label> Gender :</label>
+                                <div class="customselect" >
+                                    <select id="gender">
+                                        <option value="">Select</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="inputfield">
+                                <label> Phone Number :</label>
+                                <input type="number" class="input" id="mobile">
+                            </div>
+                            <div class="inputfield">
+                                <label class="check"> 
+                                    <input type="checkbox" id="check">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <p>Agreed to Terms and Conditions</p>
+                            </div>
+                            <div class="inputfield">
+                                <!--<button id="enter" class="btn"><a href="display.html">Register</a></button>-->
+                                <input id="enter" type="submit" value="Register" class="btn" >
+                            </div>
+                
+                        </div>
+                        
+                    </div>
+                </form>
+                
+            
+        </section>
+
+
+        <section id="result">
+            <h1>Registered People</h1>
+            <table id="display">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email ID</th>
+                    <th>Gender</th>
+                    <th>Phone Number</th>
+                </tr>
+            </table>
+        </section>
+
+    </div>
+
+    
+    
+    <script src="next.js"></script>
+   
+</body>
+</html>
